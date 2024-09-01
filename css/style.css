@@ -12,7 +12,7 @@
   --very-dark-blue: hsl(220, 13%, 13%);
   --grayish-blue: hsl(220, 14%, 75%);
   --dark-grayish-blue: hsl(219, 9%, 45%);
-  --light-grayish-blue: hsl(223, 64%, 98%);
+  --light-grayish-blue: hsl(230, 60%, 98%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --black-transparent: hsla(0, 0%, 0%, 0.75);
@@ -342,6 +342,7 @@ main .description .counter .increment {
   outline: none;
   cursor: pointer;
 }
+
 main .description .add-to-cart {
   flex: 1;
   height: 3.5rem;
@@ -355,6 +356,16 @@ main .description .add-to-cart {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+main .description .add-to-cart:hover,
+main .description .add-to-cart:focus-visible {
+  background-color: hsl(26, 98%, 68%);
+  box-shadow: rgba(255, 87, 51, 0.25) -1px 20px 55px,
+    rgba(255, 87, 51, 0.12) 0px -12px 30px, rgba(255, 87, 51, 0.12) 0px 4px 6px,
+    rgba(255, 87, 51, 0.17) 0px 12px 13px, rgba(255, 87, 51, 0.09) 0px -3px 5px;
 }
 
 main .description .add-to-cart svg path {
@@ -447,6 +458,7 @@ main .description .add-to-cart svg path {
   border: none;
   cursor: pointer;
   background: none;
+  transition: 0.3s ease-in;
 }
 
 .cart-item .product-infos .cart-container .cart-items.empty {
@@ -476,6 +488,15 @@ main .description .add-to-cart svg path {
   font-size: 1rem;
   border-radius: 0.6rem;
   cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.checkout:hover,
+.checkout:focus-visible {
+  background-color: hsl(26, 98%, 68%);
+  box-shadow: rgba(255, 87, 51, 0.25) -1px 15px 55px,
+    rgba(255, 87, 51, 0.12) 0px -6px 30px, rgba(255, 87, 51, 0.12) 0px 2px 6px,
+    rgba(255, 87, 51, 0.17) 0px 6px 13px, rgba(255, 87, 51, 0.09) 0px -1px 5px;
 }
 
 .cart-container .cart-items.empty .checkout {

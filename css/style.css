@@ -482,6 +482,12 @@ main .description .add-to-cart svg path {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .cart-container {
+    right: -1rem;
+  }
+}
+
 @media (max-width: 425px) {
   .cart-container {
     right: -4rem;
@@ -490,12 +496,6 @@ main .description .add-to-cart svg path {
 
   .cart-container .cart-items {
     padding: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .cart-container {
-    right: -1rem;
   }
 }
 
